@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/shared/head.html")
+</head>
+
+<body>
+    <div class="wrapper container-fluid">
+        <header class="header container-fluid">
+            <div class="container">
+                @@include("partials/shared/header.html")
+            </div><!-- /.container -->
+        </header><!-- /.header -->
+
+        <div class="main container-fluid text-center">
+            <div class="js-button">
+                <button id="counter-btn" class="js-button__item text-uppercase">Click me</button>
+                <div class="js-button__loader loader"></div>
+            </div>
+        </div><!-- .main -->
+
+        <footer class="footer container-fluid">
+            <div class="container">
+                @@include("partials/shared/footer.html")
+            </div><!-- /.container -->
+        </footer><!-- /.footer -->
+    </div>
+
+    @@include("partials/shared/scripts.html")
+
+</body>
+
+</html>
