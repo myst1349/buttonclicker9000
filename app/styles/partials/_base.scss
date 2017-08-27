@@ -101,7 +101,9 @@ footer {
             opacity: 0;
             @include transition(opacity 1000ms ease-in-out);
         }
+    }
 
+    &--loading {
         .js-button__loader {
             display: block;
         }

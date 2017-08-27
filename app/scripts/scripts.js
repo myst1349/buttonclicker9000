@@ -36,9 +36,10 @@
       debounce(function() {
         counter++;
         totalCount.text(counter);
+        that.parent().addClass('js-button--loading');
 
         debounce(function() {
-          that.prop('disabled', false).parent().toggleClass('js-button--fadeout');
+          that.prop('disabled', false).parent().toggleClass('js-button--fadeout').toggleClass('js-button--loading');
         }, TIMEOUT.LOADER)();
 
       }, TIMEOUT.ANIMATION)();
