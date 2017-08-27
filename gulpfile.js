@@ -66,7 +66,7 @@ gulp.task('html', ['styles'], function () {
       indent: true,
       basepath: '@file'
     }))
-    .pipe(replace(/(\.\/)/g, './../'))
+    .pipe(replace(/(\.\/)/g, './'))
     .pipe(gulp.dest('dist'));
 });
 
